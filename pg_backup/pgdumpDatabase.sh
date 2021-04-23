@@ -83,3 +83,13 @@ then
       echo "No backup file found to copy S3"
    fi
 fi
+
+#Slack notification of successful / unsuccesful backup.
+#send_slack_notification()
+#{
+#payload='payload={"text": "'$1'"}'
+#  cmd1= curl --silent --data-urlencode \
+#    "$(printf "%s" $payload)" \
+#    ${APP_SLACK_WEBHOOK} || true
+#}
+#send_slack_notification $notification_msg
