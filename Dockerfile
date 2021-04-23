@@ -2,7 +2,7 @@ CMD ["/bin/sh"]
 RUN apk update
 RUN apk add 'postgresql>12' python3 py3-pip bash git curl
 RUN pip install awscli
-COPY dir:pg_backup in /tmp/
+COPY dir:pgbackupscript in /tmp/
         tmp/
         tmp/.aws/
         tmp/.aws/.wh..wh..opq
